@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 const Listing = require("./models/listing.js");
 
 main().catch(err => console.log(err));
@@ -22,7 +23,7 @@ async function main() {
      });
       await sampleListing.save();
       console.log("sample was saved");
-      res.send("successfull")
+      res.send("successfull");
   });
 
 
