@@ -9,6 +9,7 @@ const listingSchema = new Schema({
     description: String,
     image: {
         type: String,
+        default: "https://www.pexels.com/photo/black-round-cake-with-gold-details-on-brown-wooden-table-3923555/",
         set: (v) => v === "" ? "https://www.pexels.com/photo/black-round-cake-with-gold-details-on-brown-wooden-table-3923555/": 
         v,
     },
